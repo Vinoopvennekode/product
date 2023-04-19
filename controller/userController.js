@@ -15,7 +15,7 @@ const addProduct = async (req, res) => {
     await newProduct.save();
     console.log(newProduct);
   } catch (error) {
-    res.status(404).json({ error: "page not found" });
+    res.status(404).json({ error: "error" });
   }
 };
 
@@ -28,7 +28,7 @@ const category = async (req, res) => {
     discription: des,
   });
   await cate.save();
-  console.log(cate);
+  
 };
 
 const productview = async (req, res) => {
